@@ -130,11 +130,11 @@ export const App: React.FC = () => {
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-mono text-base font-black tracking-tight text-white">VOLTGRID</span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 border border-purple-500/30 font-bold uppercase">
+                <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-purple-500/10 text-purple-300 border border-purple-500/30 font-bold uppercase">
                   ELECTRICAL OS v1.0
                 </span>
               </div>
-              <p className="text-[11px] font-mono text-slate-400">Commercial 480V Switchgear & EV Fast Charging Dispatch</p>
+              <p className="text-xs font-semibold font-mono text-slate-400">Commercial 480V Switchgear & EV Fast Charging Dispatch</p>
             </div>
           </div>
 
@@ -256,7 +256,7 @@ export const App: React.FC = () => {
                     <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-white/5">
                       <div className="flex items-center gap-2">
                         <span className="text-xs font-mono font-bold text-purple-400">{wo.id}</span>
-                        <span className={`text-[10px] font-mono px-2 py-0.5 rounded font-bold uppercase ${
+                        <span className={`text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded font-bold uppercase ${
                           wo.urgency.includes('CRITICAL') ? 'bg-rose-500/20 text-rose-300 border border-rose-500/30' :
                           wo.urgency.includes('EMERGENCY') ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' :
                           'bg-purple-500/20 text-purple-300 border border-purple-500/30'
@@ -271,8 +271,8 @@ export const App: React.FC = () => {
 
                     <div className="pt-3">
                       <h4 className="text-base font-bold text-white">{wo.facility}</h4>
-                      <p className="text-xs text-slate-400 flex items-center gap-1 mt-0.5">
-                        <MapPin className="w-3 h-3 text-slate-500" /> {wo.location}
+                      <p className="text-base text-zinc-200 leading-relaxed flex items-center gap-1 mt-0.5">
+                        <MapPin className="w-3 h-3 text-slate-300" /> {wo.location}
                       </p>
                       <p className="text-xs font-mono text-purple-300 mt-1 font-semibold">{wo.voltage}</p>
                       <p className="text-xs text-slate-300 mt-2 bg-black/30 p-2.5 rounded-xl border border-white/5">
@@ -323,7 +323,7 @@ export const App: React.FC = () => {
                   <div className="text-xs font-mono uppercase text-slate-400">Arc Flash Hazard Boundary</div>
                   <div className="p-3 rounded-xl bg-rose-950/20 border border-rose-500/30 text-xs font-mono text-rose-300">
                     <div>Flash Hazard at 18 inches: 38.4 cal/cm²</div>
-                    <div className="text-slate-400 text-[10px] mt-1">Required: Full 40 cal Hood, Suit & Insulated Gloves</div>
+                    <div className="text-slate-400 text-xs font-semibold tracking-wider mt-1">Required: Full 40 cal Hood, Suit & Insulated Gloves</div>
                   </div>
                 </div>
 
@@ -344,7 +344,7 @@ export const App: React.FC = () => {
             <div className="flex items-center justify-between">
               <div>
                 <h3 className="text-lg font-bold text-white">Commercial EV Fast Charging Fleet Depots</h3>
-                <p className="text-xs text-slate-400 font-mono">OCPP 2.0.1 Cloud Protocol & Microgrid Load Balancing</p>
+                <p className="text-base text-zinc-200 leading-relaxed font-mono">OCPP 2.0.1 Cloud Protocol & Microgrid Load Balancing</p>
               </div>
               <button
                 onClick={() => setIsAdminOpen(true)}
@@ -400,7 +400,7 @@ export const App: React.FC = () => {
             <div className="flex items-center justify-between">
               <div>
                 <h3 className="text-lg font-bold text-white">FLIR Thermographic Infrared Inspection Logs</h3>
-                <p className="text-xs text-slate-400 font-mono">Predictive Delta-T Overheat Anomaly Detection</p>
+                <p className="text-base text-zinc-200 leading-relaxed font-mono">Predictive Delta-T Overheat Anomaly Detection</p>
               </div>
               <button
                 onClick={() => setIsAdminOpen(true)}
