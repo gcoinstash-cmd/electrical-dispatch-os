@@ -1,0 +1,1 @@
+@tailwind base;@tailwind components;@tailwind utilities;@layer base{body{@apply bg-[#09080E] text-slate-100;font-feature-settings:"cv02","cv03","cv04","cv11"}}
